@@ -14,7 +14,7 @@ jobs:
   - task: DotNetCoreInstaller@0
     inputs:
       packageType: 'sdk'
-      version: '2.2.401'
+      version: '2.2'
   - script: dotnet build ./SimplCommerce.sln
     displayName: 'dotnet build'
   - script: ./run-tests.sh
@@ -33,7 +33,7 @@ jobs:
   - task: DotNetCoreInstaller@0
     inputs:
       packageType: 'sdk'
-      version: '2.2.401'
+      version: '2.2'
   - script: dotnet build ./SimplCommerce.sln
     displayName: 'dotnet build'
   - task: PowerShell@2
